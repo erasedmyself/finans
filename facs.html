@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Educação Financeira</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #00796b;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00796b;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq h3 {
+            margin: 0;
+            cursor: pointer;
+            padding: 10px;
+            background: #e0f2f1;
+            border: 1px solid #00796b;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .faq h3:hover {
+            background: #b2dfdb;
+        }
+
+        .faq p {
+            margin: 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 3px solid #00796b;
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #00796b;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const questions = document.querySelectorAll('.faq h3');
+            questions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isVisible = answer.style.display === 'block';
+                    answer.style.display = isVisible ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>FAQ - Educação Financeira</h1>
+    </header>
+    <main>
+        <h2>Perguntas Frequentes</h2>
+
+        <div class="faq">
+            <h3>1. O que é educação financeira?</h3>
+            <p>Educação financeira é o processo de aprender a gerenciar melhor o dinheiro, entender como economizar, investir e gastar de forma responsável, e alcançar objetivos financeiros a curto, médio e longo prazo.</p>
+        </div>
+
+        <div class="faq">
+            <h3>2. Por que é importante ter educação financeira?</h3>
+            <p>Ela ajuda você a evitar dívidas, planejar sua aposentadoria, realizar sonhos como comprar uma casa e construir segurança financeira para imprevistos.</p>
+        </div>
+
+        <div class="faq">
+            <h3>3. Qual é o primeiro passo para melhorar minha vida financeira?</h3>
+            <p>O primeiro passo é entender suas finanças atuais, listando renda e despesas e criando um orçamento.</p>
+        </div>
+
+        <div class="faq">
+            <h3>4. Como posso começar a economizar dinheiro?</h3>
+            <p>Estabeleça metas, pague-se primeiro, reduza despesas desnecessárias e use aplicativos de controle financeiro.</p>
+        </div>
+
+        <div class="faq">
+            <h3>5. O que é um fundo de emergência?</h3>
+            <p>Um fundo de emergência é uma reserva financeira para cobrir despesas inesperadas, garantindo mais tranquilidade.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Educação Financeira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
